@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.MainScreenController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="760.0">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="760.0" style="-fx-background-color: #33B9f9;">
+               <children>
+                  <Label layoutX="38.0" layoutY="-2.0" text="Hi," textFill="WHITE">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" layoutX="141.0" layoutY="15.0" prefHeight="70.0" prefWidth="384.0" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="552.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" styleClass="dashboard-btns" stylesheets="@../design/design.css" text="View Transactions">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="552.0" layoutY="51.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" styleClass="dashboard-btns" stylesheets="@../design/design.css" text="Transfer Money">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label layoutX="41.0" layoutY="120.0" text="Welcome Back,">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="body" layoutX="109.0" layoutY="203.0" prefHeight="234.0" prefWidth="573.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Pane layoutY="456.0" prefHeight="50.0" prefWidth="760.0" style="-fx-background-color: ; -fx-background-color: ;">
+               <children>
+                  <FontAwesomeIconView fill="#33b9f9" glyphName="HOME" layoutX="152.0" layoutY="38.0" size="28" text="" />
+                  <Label layoutX="185.0" layoutY="12.0" prefHeight="29.0" prefWidth="209.0" text="JDI Bank, LLC, USA" textFill="#575757">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="#33b9f9" glyphName="PHONE" layoutX="450.0" layoutY="37.0" size="25" />
+                  <Label layoutX="483.0" layoutY="12.0" prefHeight="29.0" prefWidth="209.0" text="1-800-725-5123" textFill="#575757">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
